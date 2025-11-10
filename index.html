@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ramil Mammadov | BI & SQL Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <div class="theme-switcher">
+    <input type="radio" id="light-mode" name="theme" value="light" checked>
+    <label for="light-mode"><i class="fas fa-sun"></i></label>
+    <input type="radio" id="dark-mode" name="theme" value="dark">
+    <label for="dark-mode"><i class="fas fa-moon"></i></label>
+  </div>
+
   <header>
     <nav class="navbar">
-      <h1 class="logo">Ramil<span> BI/SQL DEVELOPER </span></h1>
+      <h1 class="logo">Ramil<span> BI & SQL Expert </span></h1>
       <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -20,76 +29,94 @@
     </nav>
   </header>
 
-  <section id="hero">
-    <div class="hero-content">
+  <section id="hero" class="section">
+    <div class="content">
+      <i class="fas fa-database icon-lg"></i>
       <h2>Hi, I'm <span>Ramil Mammadov</span></h2>
       <h3>BI Developer | SQL Expert | Data Analyst</h3>
-      <p>I design and optimize business intelligence systems, transforming complex data into actionable insights.</p>
+      <p>I build high-performance BI systems, transforming raw data into insights and automation.</p>
       <a href="Ramil_Mammadov_CV.pdf" class="btn" download>Download CV</a>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a BI SQL Developer with 6+ years of experience in Power BI, T-SQL, SSIS, and Data Modeling.
-      I build analytical dashboards and automate ETL processes to support data-driven decisions.
-      Currently, I work at PASHA Life Insurance optimizing workflows handling over 5M+ records monthly.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill">Power BI</div>
-      <div class="skill">SQL Server / T-SQL</div>
-      <div class="skill">PostgreSQL</div>
-      <div class="skill">SSIS / SSRS</div>
-      <div class="skill">Python</div>
-      <div class="skill">DAX</div>
-      <div class="skill">ETL & Data Modeling</div>
+  <section id="about" class="section">
+    <div class="content">
+      <i class="fas fa-user icon-lg"></i>
+      <h2>About Me</h2>
+      <p>
+        BI SQL Developer with 6+ years of experience in Power BI, T-SQL, SSIS, and data modeling. 
+        I specialize in creating analytics solutions that drive strategic business decisions.
+        At PASHA Life, I optimize ETL workflows handling over 5M+ records monthly.
+      </p>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>Key Projects</h2>
-    <div class="project-grid">
-      <div class="project">
-        <h3>Financial Reporting Platform</h3>
-        <p>Developed Power BI dashboards for 500M+ revenue reporting and solvency monitoring (95% breach detection).</p>
-      </div>
-      <div class="project">
-        <h3>Claims Reserve Analytics</h3>
-        <p>Automated SSIS pipelines and DAX models monitoring 2B+ claim reserves for actuarial departments.</p>
-      </div>
-      <div class="project">
-        <h3>ETL Workflow Optimization</h3>
-        <p>Re-engineered ETL processes handling 5M+ records/month, reducing execution time by 40%.</p>
+  <section id="skills" class="section">
+    <div class="content">
+      <i class="fas fa-tools icon-lg"></i>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="column">
+          <div class="skill"><i class="fab fa-microsoft"></i> Power BI</div>
+          <div class="skill"><i class="fas fa-database"></i> SQL Server / T-SQL</div>
+          <div class="skill"><i class="fas fa-server"></i> PostgreSQL</div>
+        </div>
+        <div class="column">
+          <div class="skill"><i class="fas fa-code"></i> Python</div>
+          <div class="skill"><i class="fas fa-cogs"></i> SSIS / SSRS</div>
+          <div class="skill"><i class="fas fa-project-diagram"></i> Data Modeling</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>You can download my complete CV below:</p>
-    <a href="Ramil_Mammadov_CV.pdf" class="btn" download>Download Resume</a>
+  <section id="projects" class="section">
+    <div class="content">
+      <i class="fas fa-chart-line icon-lg"></i>
+      <h2>Key Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3><i class="fas fa-chart-pie"></i> Financial Reporting Platform</h3>
+          <p>Developed dashboards for 500M+ revenue and solvency monitoring (95% breach detection).</p>
+        </div>
+        <div class="project">
+          <h3><i class="fas fa-shield-alt"></i> Claims Reserve Analytics</h3>
+          <p>Automated DAX models and SSIS pipelines monitoring 2B+ claim reserves.</p>
+        </div>
+        <div class="project">
+          <h3><i class="fas fa-sync-alt"></i> ETL Workflow Optimization</h3>
+          <p>Re-engineered processes handling 5M+ records/month, reducing execution time by 40%.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Let’s connect! Feel free to reach out for freelance projects or collaboration.</p>
-    <div class="contact-links">
-      <a href="mailto:r.mammadoff@gmail.com">Email</a>
-      <a href="https://linkedin.com/in/rmammadoff" target="_blank">LinkedIn</a>
-      <a href="https://github.com/" target="_blank">GitHub</a>
+  <section id="resume" class="section">
+    <div class="content">
+      <i class="fas fa-file-alt icon-lg"></i>
+      <h2>Resume</h2>
+      <p>Download my full resume below:</p>
+      <a href="Ramil_Mammadov_CV.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="content">
+      <i class="fas fa-envelope-open-text icon-lg"></i>
+      <h2>Contact</h2>
+      <p>Let's connect! I'm open for freelance BI or data analytics projects.</p>
+      <div class="contact-links">
+        <a href="mailto:r.mammadoff@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://linkedin.com/in/rmammadoff" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Ramil Mammadov | Built for Data Enthusiasts</p>
+    <p>© 2025 Ramil Mammadov </p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
